@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida 100% — GTA VI Trophy Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Leonida 100%</h1>
+    <p class="sub">GTA VI trophy guide &amp; tracker — all 55 PlayStation 5 trophies, each
+    with a cited step-by-step guide in my own words.</p>
+  </div>
+  <p id="progress">0 of 55 earned</p>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-tab="tracker" class="on" type="button">Tracker</button>
+  <button data-tab="roadmap" type="button">Roadmap</button>
+  <button data-tab="missables" type="button">Missables</button>
+  <button data-tab="sources" type="button">Sources</button>
+</nav>
+<div class="controls" id="controls">
+  <label>Search <input id="search" type="search" placeholder="Trophy or mission…"></label>
+  <label>Kind <select id="kind"><option value="all">All</option><option value="story">Story</option><option value="missable">Missable</option><option value="collectibles">Collectibles</option><option value="activities">Activities</option></select></label>
+  <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label class="spoiler"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+</div>
+<main>
+  <section id="view-tracker">
+    <table>
+      <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>Kind</th><th>How to get it</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </section>
+  <section id="view-roadmap" hidden></section>
+  <section id="view-missables" hidden></section>
+  <section id="view-sources" hidden></section>
+  <aside id="detail" hidden></aside>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
